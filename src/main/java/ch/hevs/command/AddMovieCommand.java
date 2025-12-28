@@ -21,16 +21,16 @@ public class AddMovieCommand implements Command {
         this.director = director;
         this.year = year;
         this.genre = genre;
-        movie = new Movie(this.title, this.director, this.year);
     }
 
     @Override
     public void execute() {
+        movie = new Movie(this.title, this.director, this.year);
         try {
             tree.addMovie(this.genre, movie);
-            printWriter.println("Movie added successfully");
+            printWriter.println("Movie added successfully: " + title);
         } catch (IllegalStateException e) {
-            printWriter.println(e.getMessage());
+            printWriter.println("Error: " +  e.getMessage());
         }
         printWriter.println("END");
     }

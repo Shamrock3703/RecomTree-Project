@@ -62,6 +62,12 @@ public class GenreTree {
     }
 
     public void addMovie(String genre, Movie movie) {
+        List<Movie> movies = getAllMovies();
+        for (Movie existingMovie : movies) {
+            if (existingMovie.getTitle().equalsIgnoreCase(movie.getTitle())) {
+                throw new IllegalStateException("Movie '" + movie.getTitle() + "' already exists");
+            }
+        }
         GenreNode node = search(genre);
         if (node != null) {
             node.addMovie(movie);
