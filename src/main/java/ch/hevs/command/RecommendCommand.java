@@ -1,5 +1,9 @@
 package ch.hevs.command;
 
+import ch.hevs.content.GenreTree;
+import ch.hevs.content.Movie;
+import ch.hevs.strategy.RecommendationStrategy;
+
 import java.io.PrintWriter;
 import java.util.List;
 

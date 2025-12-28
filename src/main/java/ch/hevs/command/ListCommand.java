@@ -1,5 +1,8 @@
 package ch.hevs.command;
 
+import ch.hevs.content.GenreTree;
+import ch.hevs.strategy.ListStrategy;
+
 import java.io.PrintWriter;
 import java.util.List;
 

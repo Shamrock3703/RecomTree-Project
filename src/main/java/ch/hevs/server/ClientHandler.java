@@ -1,5 +1,10 @@
 package ch.hevs.server;
 
+import ch.hevs.command.*;
+import ch.hevs.content.GenreTree;
+import ch.hevs.content.Movie;
+import ch.hevs.strategy.*;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.List;

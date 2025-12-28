@@ -1,5 +1,8 @@
 package ch.hevs.strategy;
 
+import ch.hevs.content.GenreTree;
+import ch.hevs.content.Movie;
+
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;

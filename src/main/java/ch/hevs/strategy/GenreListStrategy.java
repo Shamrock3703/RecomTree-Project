@@ -1,5 +1,8 @@
 package ch.hevs.strategy;
 
+import ch.hevs.content.GenreNode;
+import ch.hevs.content.GenreTree;
+
 import java.util.ArrayList;
 import java.util.List;
 

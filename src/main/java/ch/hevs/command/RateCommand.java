@@ -1,5 +1,7 @@
 package ch.hevs.command;
 
+import ch.hevs.content.Movie;
+
 import java.io.PrintWriter;
 
 public class RateCommand implements Command{

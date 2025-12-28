@@ -1,5 +1,7 @@
 package ch.hevs.server;
 
+import ch.hevs.content.GenreTree;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;

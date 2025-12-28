@@ -1,5 +1,8 @@
 package ch.hevs.command;
 
+import ch.hevs.content.GenreTree;
+import ch.hevs.content.Movie;
+
 import java.io.PrintWriter;
 
 public class AddMovieCommand implements Command {
