@@ -4,6 +4,7 @@ import ch.hevs.content.GenreNode;
 import ch.hevs.content.GenreTree;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class GenreListStrategy implements ListStrategy {
@@ -19,6 +20,7 @@ public class GenreListStrategy implements ListStrategy {
             }
             result.remove(0);
         }
+        Collections.sort(result, (a, b) -> a.compareTo(b));
         return result;
     }
 }

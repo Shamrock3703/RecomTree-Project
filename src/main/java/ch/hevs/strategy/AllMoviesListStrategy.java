@@ -4,6 +4,7 @@ import ch.hevs.content.GenreTree;
 import ch.hevs.content.Movie;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class AllMoviesListStrategy implements ListStrategy {
@@ -15,6 +16,7 @@ public class AllMoviesListStrategy implements ListStrategy {
         for (Movie movie : movies) {
             result.add(movie.toString());
         }
+        Collections.sort(result, (a, b) -> a.compareTo(b));
         return result;
     }
 }
