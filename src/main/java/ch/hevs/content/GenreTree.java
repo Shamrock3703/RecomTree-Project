@@ -76,11 +76,6 @@ public class GenreTree {
         }
     }
 
-    public void displayMovie(String genre) {
-        GenreNode node = search(genre);
-        node.display();
-    }
-
     public List<Movie> getAllMovies() {
         List<Movie> movies = new ArrayList<>();
         collectMoviesRecursive(root, movies);
