@@ -24,6 +24,7 @@ To compile the project and generate the JAR file, open your terminal in the proj
 
 ```bash
 mvn clean package
+```
 This will create the artifact `movie-recom-tree-1.0-SNAPSHOT.jar` inside the `target/` directory.
 
 ## How to Run
@@ -35,11 +36,11 @@ The server initializes the Genre Tree and listens for connections on port 5000.
 ### 2. Run the following command:
 ```bash
 java -cp target/movie-recom-tree-1.0-SNAPSHOT.jar ch.hevs.server.RecomServer
-
+```
 ### 3. Start the client:
 Open a new terminal window (do not close the server) and run the client to connect to the server:
 ```bash
 java -cp target/movie-recom-tree-1.0-SNAPSHOT.jar ch.hevs.client.Client
-
+```
 ### Note:
 The -cp flag specifies the Classpath, allowing you to select which main class (RecomServer or Client) to execute from the same JAR file.
